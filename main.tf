@@ -8,8 +8,6 @@ terraform {
   required_version = ">= 1.2.0"
 }
 provider "aws" {
-  region  = "us-west-2"
-  profile = "jack.roper"
 }
 resource "aws_instance" "example_server" {
   ami           = "ami-04e914639d0cca79a"
